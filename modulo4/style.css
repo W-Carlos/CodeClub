@@ -12,8 +12,8 @@ body {
 
 .content {
     border: 2px solid #178FFF;
-    border-radius: 5px;
-    padding-left: 1rem;
+    border-radius: 10px;
+    
     background: #282828;
     color: #B1BEC7;
     width: 400px;
@@ -30,6 +30,7 @@ input {
     display: block;
     margin-bottom: .8rem;
     font-family: 'Nunito', sans-serif;
+    font-size: 16px;
     border-radius: 5px;
     background: #1A1A1A;
     color: #B1BEC7;
@@ -45,6 +46,7 @@ input {
 
 label {
     font-size: 18px;
+    font-weight: 600;
 }
 
 .label {
@@ -75,24 +77,26 @@ textarea {
     background: #1A1A1A;
     color: #B1BEC7;
     font-size: 16px;
+    font-family: 'Nunito', sans-serif;
     border-color: #00A8E8;
     outline: none;
 }
 
 .tamanho {
     width: 346px;
-    height: 30px;
+    height: 35px;
     padding-left: 10px;
 }
 
 button {
     width: 170px;
-    height: 30px;
+    height: 35px;
     margin-top: 5px;
     margin-bottom: 10px;
     cursor: pointer;
     border: none;
-    font-size: 15px;
+    font-size: 16px;
+    font-weight: 600;
     border-radius: 5px;
 }
 
