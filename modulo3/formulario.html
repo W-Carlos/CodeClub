@@ -18,24 +18,26 @@
                 <input type="email" name="email" id="email" placeholder="exemplo@gmail.com"><br><br>
 
                 <label for="idade">Idade</label><br>
-                <input type="number" name="idade" id="idade" min="12" placeholder="Digite sua idade"><br><br>
+                <input type="number" name="idade" id="idade" min="12" step="1" placeholder="Digite sua idade"><br><br>
 
                 <label for="calendario">Data de Nascimeto</label><br>
                 <input type="date" name="calendario" id="calendario" required><br><br>
 
-                <label for="conta">Onde você possui conta:</label><br>
-                <label for="Instagram"></label>
-                <input type="checkbox" name="conta" id="Instagram"> Instagram
-                <label for="Facebook"></label>
-                <input type="checkbox" name="conta" id="Facebook"> Facebook 
-                <label for="Youtube"></label>
-                <input type="checkbox" name="conta" id="Youtube"> Youtube <br><br>
+                <label for="conta">Onde você possui conta:<br>
+                    <label for="Instagram"></label>
+                    <input type="checkbox" name="conta" id="Instagram"> Instagram
+                    <label for="Facebook"></label>
+                    <input type="checkbox" name="conta" id="Facebook"> Facebook 
+                    <label for="Youtube"></label>
+                    <input type="checkbox" name="conta" id="Youtube"> Youtube
+                </label> <br><br>
 
-                <label>Sexo</label><br>
-                <label for="masculino"></label>
-                <input type="radio" name="sexo" id="masculino" value="masculino" required> Masculino
-                <label for="feminino"></label>
-                <input type="radio" name="sexo" id="feminino" value="feminino"> Feminino <br><br>
+                <label>Sexo<br>
+                    <label for="masculino"></label>
+                    <input type="radio" name="genero" id="masculino" value="masculino" required> Masculino
+                    <label for="feminino"></label>
+                    <input type="radio" name="genero" id="feminino" value="feminino"> Feminino
+                </label> <br><br>
 
                 <label for="cor-olhos">Cor dos Olhos</label>
                 <input type="color" name="cor-olhos" id="cor-olhos"><br><br>
@@ -50,13 +52,13 @@
                 <input type="telefone" name="telefone" id="telefone" placeholder="(xx) xxxxx-xxxx" required><br><br>
 
                 <label for="link">Link do Perfil do Facebook</label><br>
-                <input type="url" name="link" id="link" placeholder="https://https://www.facebook.com/usuario/"><br><br>
+                <input type="url" name="link" id="link" placeholder="https://www.facebook.com/usuario/"><br><br>
 
                 <label for="senha">Senha</label><br>
-                <input type="password" name="senha" id="senha" minlength="6" maxlength="8" required><br><br>
+                <input type="password" name="senha" id="senha" minlength="6" maxlength="8" placeholder="Digite uma senha" required><br><br>
 
-                <button type="reset">Limpar</button>
-                <button type="submit">Enviar Dados</button>
+                <button type="reset" name="reset">Limpar</button>
+                <button type="submit" name="submit">Enviar Dados</button>
             </fieldset>
         </form>
 </body>
