@@ -36,6 +36,13 @@ input {
     color: #B1BEC7;
     border-color: #00A8E8;
     outline: none;
+
+}
+
+.input-size {
+    width: 346px;
+    height: 35px;
+    padding-left: 10px;
 }
 
 .inline {
@@ -53,20 +60,19 @@ label {
     display: block;
 }
 
-.eyes {
-    display: flex;
-    
+.eyes-color {
+    display: flex;   
 }
 
-.eyes label {
+.eyes-color label {
     margin-right: 1rem;
 }
 
-.bio {
+.biography {
     margin-bottom: 12.8px;
 }
 
-.bio label{
+.biography label{
     display: block;
 }
 
@@ -82,12 +88,6 @@ textarea {
     outline: none;
 }
 
-.tamanho {
-    width: 346px;
-    height: 35px;
-    padding-left: 10px;
-}
-
 button {
     width: 170px;
     height: 35px;
@@ -100,12 +100,28 @@ button {
     border-radius: 5px;
 }
 
-.clear {
-    background: #cc2121;
-    color: #B1BEC7;
-}
-
 .submit {
     background: #178FFF;  
     color: #B1BEC7;
+    transition: 0.5s;
 }
+
+.submit:hover {
+    transform: scale(1.2);
+    background: #106fc7;
+    color: #1A1A1A;
+}
+
+.clear {
+    background: #cc2121;
+    color: #B1BEC7;
+    transition: 0.5s;
+}
+
+.clear:hover {
+    background: #f74444;
+    transform: scale(1.2);
+    color: #1A1A1A;
+}
+
+
