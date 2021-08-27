@@ -3,4 +3,6 @@
 let name1 = "João" 
 let name2 = "João"
 
-console.log(name1 === name2)
+let result = name1 === name2
+
+console.log(result)

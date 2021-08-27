@@ -3,6 +3,6 @@
 let name1 = "Wend Carlos"
 let name2 = "Não tenho partner"
 
-let msg = `Olá, meu nome é ${name1} e meu partner do CodeClub é ${name2}`
+let text = `Olá, meu nome é ${name1} e meu partner do CodeClub é ${name2}`
 
-console.log(msg)
+console.log(text)

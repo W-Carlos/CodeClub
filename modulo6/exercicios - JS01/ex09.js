@@ -3,7 +3,7 @@
 const people1 = {
     name: "João",
     age: 20,
-    sex: "masculine",
+    sex: "masculino",
     height: 1.70,
     address: "Rua 2 de Julho",
 }
@@ -11,33 +11,37 @@ const people1 = {
 const people2 = {
     nome: "Marcio",
     age: 26,
-    sex: "masculine",
+    sex: "masculino",
     height: 1.75,
-    address: "Rua 2 de Julho",
+    address: "Rua Nova s/n",
 }
 
 const people3 = {
     nome: "Maria",
     age: 30,
-    sex: "female",
+    sex: "feminino",
     height: 1.60,
-    address: "Rua 2 de Julho",
+    address: "Rua Floriano Peixoto",
 }
 
 const people4 = {
     nome: "Ana",
     age: 22,
-    sex: "female",
+    sex: "Feminino",
     height: 1.63,
-    address: "Rua 2 de Julho",
+    address: "Rua Quinze de Novembro",
 }
 
 const people5 = {
-    nome: "Davi",
-    age: 24,
-    sex: "masculine",
+    nome: "Antonio",
+    age: 28,
+    sex: "masculino",
     height: 1.78,
-    address: "Rua 2 de Julho",
+    address: "Rua Bela Vista",
 }
 
 console.log(people1)
+console.log(people2)
+console.log(people3)
+console.log(people4)
+console.log(people5)

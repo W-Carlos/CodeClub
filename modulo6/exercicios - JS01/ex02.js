@@ -3,6 +3,6 @@
 const number1 = 20
 const number2 = 5
 
-const mult = number1 * number2 + 10
+const result = (number1 * number2) + 10
 
-console.log(mult)
+console.log(result)

@@ -3,6 +3,6 @@
 const number1 = 10
 const number2 = 30
 
-const sum = number1 + number2
+const result = number1 + number2
 
-console.log(sum)
+console.log(result)

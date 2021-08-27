@@ -2,7 +2,9 @@
 
 const object1 = {
     nameOne: "João",
-    nameTwo: "João"
+    nameTwo: "Maria"
 }
 
-console.log(object1.nameOne == object1.nameTwo)
+const result = object1.nameOne === object1.nameTwo
+
+console.log(result)

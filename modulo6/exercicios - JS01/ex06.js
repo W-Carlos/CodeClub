@@ -3,4 +3,6 @@
 let name1 = "José"
 let name2 = "Pedro"
 
-console.log(name1 !== name2)
+let result = name1 !== name2
+
+console.log(result)

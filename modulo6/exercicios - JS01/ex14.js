@@ -3,4 +3,6 @@
 number1 = 3
 number2 = 8
 
-console.log(number1 > number2)
+const result = number1 > number2
+
+console.log(result)
