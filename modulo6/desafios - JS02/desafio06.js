@@ -38,11 +38,11 @@ switch (note) {
     break;
 
     case 8:
-        console.log(`Sua nota é ${note}. Seu desempenho foi Muito Bom`)
+        console.log(`Sua nota é ${note}. Seu desempenho foi Muito Bom!`)
     break;
 
     case 9:
-        console.log(`Sua nota é ${note}. Seu desempenho foi Otimo`)
+        console.log(`Sua nota é ${note}. Seu desempenho foi Otimo!`)
     break;
 
     case 10:

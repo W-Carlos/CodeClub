@@ -3,13 +3,12 @@
 { nome: "" idade:"" sexo:"" profissão: "" nacionalidade:"" }
 Ao rodar o programa, deve imprimir se a pessoa é aprovada ou não no processo ,a pessoa deve ser maior de idade e brasileira para ser aprovada.
 */
-
 const object1 = {
-    name: 'João',
-    age: '30',
+    name: 'John',
+    age: '15',
     sex: 'masculino',
-    profession: 'Desenvolvedor Front-End',
-    nationality: 'Brasileiro'
+    profession: 'Programador',
+    nationality: 'Americano'
 }
 
 const object2 = {
@@ -37,15 +36,15 @@ const object4 = {
 }
 
 const object5 = {
-    name: 'John',
-    age: '15',
+    name: 'João',
+    age: '27',
     sex: 'masculino',
-    profession: 'Programador',
-    nationality: 'Americano'
+    profession: 'Desenvolvedor Front-End',
+    nationality: 'Brasileiro'
 }
 
-if(object1.age >= 18 && (object1.nationality === "Brasileiro" || object1.nationality === "Brasileira")) {
-    console.log('Parabens você passou no processo!')
+if(object5.age >= 18 && (object5.nationality === "Brasileiro" || object5.nationality === "Brasileira")) {
+    console.log(`Parabens ${object5.name} você passou no processo! Você tem ${object5.age} anos e é ${object5.nationality}.`)
 } else {
-    console.log('Você não passou no processo')
+    console.log('Você não passou no processo! Você não possui os requisitos.')
 }
