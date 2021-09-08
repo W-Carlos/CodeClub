@@ -35,24 +35,39 @@
 
     function discountGenerator(clientName, totalPurchase, firstPurchase, payment) {
     //- Se é a primeira compra do cliente, pagar a vista, e a compra for maior que R$ 1000 => 30% de desconto 
+
+        function porcentageDiscount(number1, number2) {
+            const porcentage = (number1 * number2) / 100
+            const result = porcentage - number1
+
+            return result
+        }
        
         if (firstPurchase && payment) {
 
             if(totalPurchase > 1000) {
                 console.log(`
-                Obrigado ${clientName} pela compra. 
+                Obrigado ${clientName} pela compra. Você ganhou um cupom de 30% de desconto
                 Valor total da compra: ${totalPurchase}. 
-                Valor total com desconto: ${((totalPurchase * 30) / 100) - totalPurchase}`)
-            } else if (totalPurchase < 1000 && totalPurchase > 500) {
+                Valor total com desconto: ${porcentageDiscount(totalPurchase, 30)}`)
+
+
+                /*console.log(`
+                Obrigado ${clientName} pela compra. Você ganhou um cupom de 30% de desconto
+                Valor total da compra: ${totalPurchase}. 
+                Valor total com desconto: ${((totalPurchase * 30) / 100) - totalPurchase}`)*/
+
+            } else if (totalPurchase < 500) {
                 console.log(`
-                Obrigado ${clientName} pela compra. 
+                Obrigado ${clientName} pela compra. Você ganhou um cupom de 20% de desconto
                 Valor total da compra: ${totalPurchase}. 
-                Valor total com desconto: ${((totalPurchase * 25) / 100) - totalPurchase}`)
+                Valor total com desconto: ${porcentageDiscount(totalPurchase, 20)}`)
+                
             } else {
                 console.log(`
-                Obrigado ${clientName} pela compra. 
+                Obrigado ${clientName} pela compra. Você ganhou um cupom de 25% de desconto
                 Valor total da compra: ${totalPurchase}. 
-                Valor total com desconto: ${((totalPurchase * 20) / 100) - totalPurchase}`)
+                Valor total com desconto: ${porcentageDiscount(totalPurchase, 25)}`)
             }
         }
 
