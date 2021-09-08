@@ -5,37 +5,61 @@
     - O final da leitura de dados se dará com a entrada de um salário negativo. 
     - Faça isso usando uma função!*/
 
-let population = [
-    person1 = {
-        wage: 1500,
-        sons: 3
+let peaple = [
+    {
+        salary: 1500,
+        children: 3
     }, 
 
-    person2 = {
-        wage: 2000,
-        sons: 4
+    {
+        salary: 2000,
+        children: 4
     },
 
-    person3 = {
-        wage: 1200,
-        sons: 2
+    {
+        salary: 1200,
+        children: 2
     },
 
-    person4 = {
-        wage: 3000,
-        sons: 1
+    {
+        salary: 3000,
+        children: 1
     }, 
 
-    person5 = {
-        wage: -400,
-        sons: 3
+    {
+        salary: -2000,
+        children: 3
     }
 ]
 
-function media(number1) {
+function mediaPeaple(populationNumber) {
     
+    let mediaSalary = 0
+    let mediaChildren = 0
+    let highestSalary = 0
+
+    for(let i = 0; i < populationNumber.length; i++) {
+        const salary = populationNumber[i].salary
+        const children = populationNumber[i].children
+
+        if(salary > highestSalary) {
+            highestSalary = salary
+        }
+
+        if(salary < 0){
+            console.log(`Média de salário R$ ${(mediaSalary / i).toFixed(0)}`)
+            console.log(`Média de filhos ${(mediaChildren / i).toFixed(0)}`)
+            console.log(`Maior sálario R$ ${highestSalary}`)
+            break
+        }else{
+            mediaSalary = mediaSalary + salary
+            mediaChildren += children
+        }
+    }
+    
+
     //console.log(population)
     return
 }
 
-media(population)
+mediaPeaple(peaple)
