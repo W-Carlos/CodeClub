@@ -21,9 +21,11 @@
    - Se NÃO é a primeira compra do cliente, pagar a vista, e a compra for menor que R$ 1000, e maior que R$ 500 => 15% de desconto 
 
    - Se NÃO é a primeira compra do cliente, pagar a vista e a compra for menor que R$ 500 => desconto de 10% 
-
-   - Se NÃO é a primeira compra do cliente, NÃO pagar a vista, e a compra for maior que R$ 1000 => 10% de desconto - Se NÃO é a primeira compra do cliente, NÃO pagar a vista, e a compra for menor que R$ 1000, e maior que R$ 500 => 5% de desconto 
     ================================================================================
+   - Se NÃO é a primeira compra do cliente, NÃO pagar a vista, e a compra for maior que R$ 1000 => 10% de desconto 
+   
+   - Se NÃO é a primeira compra do cliente, NÃO pagar a vista, e a compra for menor que R$ 1000, e maior que R$ 500 => 5% de desconto 
+    
    - Se NÃO é a primeira compra do cliente, NÃO pagar a vista e a compra for menor que R$ 500 => SEM DESCONTO
 
 - A função deve imprimir na tela: 
@@ -50,13 +52,7 @@
                 Obrigado ${clientName} pela compra. Você ganhou um cupom de 30% de desconto
                 Valor total da compra: ${totalPurchase}. 
                 Valor total com desconto: ${porcentageDiscount(totalPurchase, 30)}`)
-
-
-                /*console.log(`
-                Obrigado ${clientName} pela compra. Você ganhou um cupom de 30% de desconto
-                Valor total da compra: ${totalPurchase}. 
-                Valor total com desconto: ${((totalPurchase * 30) / 100) - totalPurchase}`)*/
-
+                
             } else if (totalPurchase < 500) {
                 console.log(`
                 Obrigado ${clientName} pela compra. Você ganhou um cupom de 20% de desconto
@@ -72,21 +68,67 @@
         }
 
         if (firstPurchase && !payment) {
-
+            if(totalPurchase > 1000){
+                console.log(`
+                Obrigado ${clientName} pela compra. Você ganhou um cupom de 20% de desconto
+                Valor total da compra: ${totalPurchase}. 
+                Valor total com desconto: ${porcentageDiscount(totalPurchase, 20)}`)
+            } else if(totalPurchase < 500){
+                console.log(`
+                Obrigado ${clientName} pela compra. Você ganhou um cupom de 10% de desconto
+                Valor total da compra: ${totalPurchase}. 
+                Valor total com desconto: ${porcentageDiscount(totalPurchase, 10)}`)
+            } else {
+                console.log(`
+                Obrigado ${clientName} pela compra. Você ganhou um cupom de 15% de desconto
+                Valor total da compra: ${totalPurchase}. 
+                Valor total com desconto: ${porcentageDiscount(totalPurchase, 15)}`)
+            }
         }
 
         if (!firstPurchase && payment) {
-
+            if(totalPurchase > 1000) {
+                console.log(`
+                Obrigado ${clientName} pela compra. Você ganhou um cupom de 20% de desconto
+                Valor total da compra: ${totalPurchase}. 
+                Valor total com desconto: ${porcentageDiscount(totalPurchase, 20)}`)
+            } else if(totalPurchase < 500){
+                console.log(`
+                Obrigado ${clientName} pela compra. Você ganhou um cupom de 10% de desconto
+                Valor total da compra: ${totalPurchase}. 
+                Valor total com desconto: ${porcentageDiscount(totalPurchase, 10)}`)
+            } else {
+                console.log(`
+                Obrigado ${clientName} pela compra. Você ganhou um cupom de 15% de desconto
+                Valor total da compra: ${totalPurchase}. 
+                Valor total com desconto: ${porcentageDiscount(totalPurchase, 15)}`)
+            }
         } 
 
         if (!firstPurchase && !payment) {
-
+            if(totalPurchase > 1000) {
+                console.log(`
+                Obrigado ${clientName} pela compra. Você ganhou um cupom de 10% de desconto
+                Valor total da compra: ${totalPurchase}. 
+                Valor total com desconto: ${porcentageDiscount(totalPurchase, 10)}`)
+            } else if(totalPurchase < 500){
+                console.log(`
+                Obrigado ${clientName} pela compra.
+                Valor total da compra: ${totalPurchase}. 
+                Você ganhou um cupom de desconto para 
+                proxima compra no valor de: ${Math.floor(Math.random() * (20 - 10) + 10)} %`)                
+            } else {
+                console.log(`
+                Obrigado ${clientName} pela compra. Você ganhou um cupom de 5% de desconto
+                Valor total da compra: ${totalPurchase}. 
+                Valor total com desconto: ${porcentageDiscount(totalPurchase, 5)}`)
+            }
         }
     }
 
     const clientName = 'João'
     const totalPurchase = 400
-    const firstPurchase = true
-    const payment = true
+    const firstPurchase = false
+    const payment = false
 
     discountGenerator(clientName, totalPurchase, firstPurchase, payment)
