@@ -47,9 +47,9 @@ function mediaPeaple(populationNumber) {
         }
 
         if(salary < 0){
-            console.log(`Média de salário R$ ${(mediaSalary / i).toFixed(0)}`)
-            console.log(`Média de filhos ${(mediaChildren / i).toFixed(0)}`)
-            console.log(`Maior sálario R$ ${highestSalary}`)
+            console.log(`Média de salário: R$${(mediaSalary / i).toFixed(0)}`)
+            console.log(`Média de filhos: ${(mediaChildren / i).toFixed(0)}`)
+            console.log(`Maior sálario: R$${highestSalary}`)
             break
         }else{
             mediaSalary = mediaSalary + salary
@@ -57,7 +57,6 @@ function mediaPeaple(populationNumber) {
         }
     }
     
-
     //console.log(population)
     return
 }

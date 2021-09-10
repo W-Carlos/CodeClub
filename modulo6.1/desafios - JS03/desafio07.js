@@ -6,15 +6,13 @@
 Cálculo taxa = juros(Valor atual do investimento - Valor inicial investido) / Valor inicial investido * tempo */
 
 function investmentRate(initialValue, currentValue, investmentTime) {
-    const rate = (currentValue - initialValue) / (initialValue * investmentTime) * 100
-    /*const fees = currentValue - initialValue
-    const rate = fees / (initialValue * investmentTime) * 100*/
+    const rate = (currentValue - initialValue) / (initialValue * investmentTime) 
 
-    console.log(`A taxa de mensal de juros é ${rate}%`)    
+    console.log(`A taxa de mensal de juros é ${(rate * 100).toFixed(2)}%`)    
 }
 
-const initialValue = 2000
-const currentValue = 2600
+const initialValue = 3000
+const currentValue = 3700
 const investmentTime = 12
 
 investmentRate(initialValue, currentValue, investmentTime)

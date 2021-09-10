@@ -5,9 +5,7 @@
 function number(value) {
     for(i = 1; i <= value; i++) {
         console.log(i)
-    }
-
-    return 
+    } 
 }
 
 number(10)

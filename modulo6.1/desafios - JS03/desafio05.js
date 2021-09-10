@@ -7,10 +7,9 @@ function numbers(number1, number2) {
     console.log(`O número maior é ${result1}`)
     console.log(`O número menor é ${result2}`)
 
-    return 
+     
 }
 
-let numberOne = 10
-let numberTwo = 4
 
-numbers(numberOne, numberTwo)
+
+numbers(6, 10)

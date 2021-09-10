@@ -127,8 +127,8 @@
     }
 
     const clientName = 'João'
-    const totalPurchase = 400
-    const firstPurchase = false
-    const payment = false
+    const totalPurchase = 1200
+    const firstPurchase = true
+    const payment = true
 
     discountGenerator(clientName, totalPurchase, firstPurchase, payment)
