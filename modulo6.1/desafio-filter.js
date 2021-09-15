@@ -34,5 +34,4 @@ const newCompanies = companies.filter((companies) => {
     
     return true
 })
-
 console.log(newCompanies)

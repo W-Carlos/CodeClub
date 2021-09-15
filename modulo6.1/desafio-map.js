@@ -21,7 +21,7 @@ const newList = list.map((listVit) => {
 })
 
 console.log(newList)
-*/
+
 
 /*
 // Desafio 2
