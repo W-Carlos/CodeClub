@@ -15,6 +15,6 @@ element.onclick = () => {
 
 const element2 = document.querySelector('input')
 
-element2.onkeypress = () => {
-    console.log('Clikei em uma tecla')
+element2.onkeypress = (event) => {
+    console.log(event.target.value)
 }
