@@ -1,4 +1,5 @@
 const button = document.getElementById('convert-button')
+const select = document.getElementById('currency-select')
 
 const dolar = 5.2
 
@@ -17,4 +18,25 @@ const convertValues = () => {
 
 }
 
+const changeCurrency = () => {
+    const currencyName = document.getElementById('currency-name-text')
+    const currencyImg =document.getElementById('currency-image')
+
+    //currencyName.innerHTML = 'Euro'
+
+    if(select.value === "US$ Dólar americano") {
+        currencyName.innerHTML = 'Dólar Americano'
+        currencyImg.src = 'assets/estados-unidos.svg'
+    }
+
+    if(select.value === "€ Euro") {
+        currencyName.innerHTML = 'Euro'
+        currencyImg.src = 'assets/euro.svg'
+    }
+
+    //console.log(select.value)
+    
+}
+
 button.addEventListener('click', convertValues)
+select.addEventListener('change', changeCurrency)
