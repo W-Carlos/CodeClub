@@ -11,12 +11,13 @@ h1 {
 .container {
     margin: 10px;
     border: solid 1px #975BA6;
-    
+    display: flex;
+    height: 500px;
+    width: 800px;
 }
 
 .block {
-    width: 100px;
-    height: 100px;
+
     background: #CDD72B;
     border: 5px solid #975BA6;
     border-radius: 5px;
@@ -24,4 +25,5 @@ h1 {
     font-weight: bold;
     text-align: center;
     margin: 10px;
+    flex-grow: 1;
 }
