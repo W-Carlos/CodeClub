@@ -14,12 +14,13 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin-top: 80px;
 }
 
 .container {
     width: 375px;
     background: #F4F4F4;
-   
+   margin-top: 50px;
 }
 
 header {
